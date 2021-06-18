@@ -1,0 +1,1 @@
+{USA=34, Austarlia=26, SA=30, India=126}
