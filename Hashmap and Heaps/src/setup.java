@@ -14,10 +14,26 @@ public class setup {
         hm.put("Australia", 26);
         hm.put("SA", 30);
         hm.put("USA", 34);
-
-        System.out.println(hm);
-
         scn.close();
 
+        System.out.println(hm);
+        
+        hm.put("Shrilanka", 1);
+        System.out.println(hm);
+        System.out.println(hm.get("India")); 
+        System.out.println(hm.get("Russia")); 
+
+        System.out.println(hm.containsKey("India"));
+        System.out.println(hm.containsKey("Russia"));
+        
+
+        Set<String> keys = hm.keySet();
+        System.out.println(keys);
+
+        for(String s : keys)
+        {
+            Integer val = hm.get(s);
+            System.out.println(s + " " + val);
+        }
     }
 }
