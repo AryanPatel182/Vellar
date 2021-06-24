@@ -1,7 +1,7 @@
 import java.util.*;
 import java.io.*;
 
-public class App {
+public class TopologicalSort {
     public static class Edge {
         int self;
         int nbr;
@@ -12,6 +12,21 @@ public class App {
             this.nbr = nbr;
             this.val = val;
         }
+    }
+
+    public static void topologicalsort(ArrayList<Edge>[] graph, int src , boolean[] visited, Stack<Integer> st) {
+        
+            visited[src]  = true;
+            for(Edge e: graph[src])
+            {
+                if(visited[e.nbr] == false)
+                {
+                    topologicalsort(graph, e.nbr, visited, st);
+                }
+            }
+            st.add(src);
+
+            
     }
     public static void main(String[] args) throws Exception {
         File input = new File("input.txt"); // declare input
@@ -29,21 +44,34 @@ public class App {
 
         int edges = scn.nextInt();
 
+
         for (int i = 0; i < edges; i++) {
             int self = scn.nextInt();
             int nbr = scn.nextInt();
-            
 
-            graph[self].add(new Edge(self, nbr, 10));
-            graph[nbr].add(new Edge(nbr, self, 10));
+            graph[self].add(new Edge(self, nbr, 10));            
 
         }
 
         
 
-        // boolean[] visited = new boolean[vts];
-
+        boolean[] visited = new boolean[vts];
         scn.close();
-        
+
+        Stack<Integer> st = new Stack<>();
+        for(int v = 0; v<vts ;v++)
+        {
+            if(visited[v] == false)
+            {
+                topologicalsort(graph , v , visited , st);
+            }
+        }
+
+        while(st.size()>0)
+        {            
+            System.out.println(st.pop());
+        }
+
+
     }
 }
