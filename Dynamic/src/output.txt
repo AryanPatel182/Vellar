@@ -1,7 +1,1 @@
-truefalsefalsefalsefalsefalse
-falsetruefalsefalsefalsefalse
-falsefalsetruefalsefalsefalse
-falsefalsefalsefalsefalsefalse
-falsefalsefalsefalsefalsefalse
-falsefalsefalsefalsefalsefalse
-false
+-1

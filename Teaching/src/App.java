@@ -8,7 +8,8 @@ public class App {
         Scanner scn = new Scanner(input); // declare scanner
         PrintStream stream = new PrintStream(output);
         System.setOut(stream);
-        
+
+
         scn.close();
 
 

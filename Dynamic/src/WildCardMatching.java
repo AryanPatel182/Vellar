@@ -66,11 +66,8 @@ public class WildCardMatching {
                             dp[i][j] = false;
                         }
                     }
-                }
-
-                System.out.print(dp[i][j]);                
-            }
-            System.out.println();
+                }                          
+            }            
         }
 
         System.out.println(dp[0][0]);
