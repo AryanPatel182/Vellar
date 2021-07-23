@@ -45,11 +45,27 @@ int main()
     ios_base::sync_with_stdio(0);
     cin.tie(0);
     cout.tie(0);
-    // long long t;
-    // cin >> t;
-    // while (t--)
-    // {
-        
-    // }
+    long long t;
+    cin >> t;
+    while (t--)
+    {
+        ll n;
+        cin>>n;
+
+        ll odd=0;
+        ll even=0;
+
+        for(ll i =0; i<2*n; i++)
+        {
+            ll x;
+            cin>>x;
+            if(x%2==0) even++;
+            else odd++;
+        }
+
+        if(even == odd) cout<<"Yes"<<endl;
+        else cout<<"No"<<endl;
+
+    }
     return 0;
 }

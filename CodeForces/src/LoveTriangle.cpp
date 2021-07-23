@@ -45,11 +45,30 @@ int main()
     ios_base::sync_with_stdio(0);
     cin.tie(0);
     cout.tie(0);
-    // long long t;
-    // cin >> t;
-    // while (t--)
-    // {
+    ll n;
+    cin>>n;
+    ll arr[n];
+
+    for(ll i=0; i<n; i++)
+    {
+        cin>>arr[i];
+    }
+    string ans = "No";
+    for(ll i = 0 ; i<n; i++)
+    {
+        ll v1 = arr[i];
+        ll v2 = arr[v1-1];
+        ll v3 = arr[v2-1];
+
+        if(i==v3-1)
+        {
+            ans = "Yes";
+            break;
+        }
         
-    // }
+    }
+
+    cout<<ans<<endl;
+
     return 0;
 }

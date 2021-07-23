@@ -40,16 +40,45 @@ using namespace std;
 #define all(x) (x).begin(), (x).end()
 #define INF 1e15
 
+class Pair
+{
+public:
+    Pair();
+    
+};
+
+
+
 int main()
 {
     ios_base::sync_with_stdio(0);
     cin.tie(0);
     cout.tie(0);
-    // long long t;
-    // cin >> t;
-    // while (t--)
-    // {
+    ll n;
+    cin >> n;
+    
+    ll arr[n];
+    for(int i=0 ; i<n ; i++)
+    {
+        cin>>arr[i];
+    }
+
+    ll maxval = 0;
+
+    for(ll i=0; i<n; i++)
+    {
+        ll c= 0;
+        ll j = i;
+        while(j>=0)
+        {
+            j = arr[j]-1;
+            c++;
+        }
+
+        maxval = max(maxval, c);
         
-    // }
+    }
+
+    cout<<maxval<<endl;
     return 0;
 }
