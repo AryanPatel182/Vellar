@@ -1,18 +1,7 @@
-15
-1 car
-1 trie
-1 card
-1 cards
-1 cot
-1 cots
-1 tried
-1 tries
-1 try
-
-2 cot
-2 car
-2 cotw
-
-3 co
-3 tro
-3 tri
+6
+dog
+cat 
+catdog
+dogcat
+bat 
+dogcatbat
