@@ -1,7 +1,2 @@
-6
-dog
-cat 
-catdog
-dogcat
-bat 
-dogcatbat
+4 catt cat bat rat
+the cattle was rattled by the battery

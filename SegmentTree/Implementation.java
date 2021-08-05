@@ -33,7 +33,7 @@ public class Implementation {
 
         private int query(int node, int start, int end, int l, int r)
         {
-            if(start>r  || end<l) return Integer.MIN_VALUE;
+            if(start>r  || end<l) return -1000;
 
             if(start == end) return tree[node];
 
