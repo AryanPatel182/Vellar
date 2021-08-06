@@ -5,8 +5,7 @@ public class ConcatenatedWords {
 
     public static class Node{
         Node[] childs = new Node[26];
-        String str;
-    
+        String str;    
     }
     
     public static void insert(Node curr, String s)
