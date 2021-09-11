@@ -5,7 +5,7 @@ public class kLCMeasyversion {
 
     public static void solve() {
         int n = scn.nextInt();
-        int k = scn.nextInt();
+        // int k = scn.nextInt();
         
         if(n%2==1)
         {
