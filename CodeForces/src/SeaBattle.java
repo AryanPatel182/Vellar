@@ -8,7 +8,7 @@ public class SeaBattle {
         int n = scn.nextInt();
         int a = scn.nextInt();
         int b = scn.nextInt();
-        int k = scn.nextInt();
+        // int k = scn.nextInt();
 
         String s = scn.next();
 
