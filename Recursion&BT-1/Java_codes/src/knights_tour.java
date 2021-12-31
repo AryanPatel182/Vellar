@@ -13,6 +13,7 @@ public class knights_tour {
             }
             System.out.println();
         }
+        System.out.println();
     }
     public static void printKnights(int[][] arr, int r, int c, int move) {
 
@@ -27,6 +28,7 @@ public class knights_tour {
             arr[r][c] = 0;
             return;
         }
+        // System.out.println(move);
         
         arr[r][c] = move;
         printKnights(arr, r-2, c+1, move+1);
@@ -52,7 +54,8 @@ public class knights_tour {
         scn.close();
 
         
-        printKnights(arr,r,c,1);
+        printKnights(arr,r-1,c-1,1);
+        // display(arr);
 
     }
 }
